@@ -1,10 +1,11 @@
+-- Placeholder CTE
 WITH raw_reviews AS (
     SELECT 
         *
     FROM 
         {{ source('airbnb_data', 'reviews') }}
 )
-
+-- Select required columns and make some naming clarifications
 SELECT
     listing_id,
     date AS review_date,

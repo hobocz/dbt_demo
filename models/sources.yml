@@ -2,6 +2,7 @@ version: 2
 
 sources:
   - name: airbnb_data
+    description: Clean table with Airbnb listing data.
     schema: raw
     tables:
       - name: listings

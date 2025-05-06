@@ -1,3 +1,4 @@
+-- Placeholder CTEs
 WITH
 l AS (
     SELECT
@@ -6,10 +7,11 @@ l AS (
         {{ ref('dim_listings_clean') }}
 ),
 h AS (
-    SELECT * 
+    SELECT 
+        * 
     FROM {{ ref('dim_hosts_clean') }}
 )
-
+-- Select required columns and perform simple cleaning
 SELECT 
     l.listing_id,
     l.listing_name,
@@ -22,4 +24,5 @@ SELECT
     l.created_at,
     GREATEST(l.updated_at, h.updated_at) as updated_at
 FROM l
-LEFT JOIN h ON (h.host_id = l.host_id)
+LEFT JOIN h 
+ON (h.host_id = l.host_id)

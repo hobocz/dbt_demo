@@ -4,12 +4,14 @@
     )
 }}
 
+-- Placeholder CTE
 WITH src_listings AS (
     SELECT
         *
     FROM
         {{ ref('src_listings') }}
 )
+-- Select required columns and perform simple cleaning
 SELECT
     listing_id,
     listing_name,

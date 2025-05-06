@@ -1,10 +1,11 @@
+-- Placeholder CTE
 WITH raw_listings AS (
     SELECT 
         *
     FROM 
         {{ source('airbnb_data', 'listings') }}
 )
-
+-- Select required columns and make some naming clarifications
 SELECT
     id AS listing_id,
     name AS listing_name,

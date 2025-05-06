@@ -1,3 +1,5 @@
+-- A simple snapshot example
+
 {% snapshot scd_raw_listings %}
 
 {{
