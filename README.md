@@ -1,15 +1,25 @@
-Welcome to your new dbt project!
 
-### Using the starter project
+<!-- ABOUT THE PROJECT -->
+## About The Project
+- This is a simple dbt project meant to demonstrate core functionality. 
+- **Please note**: This is a work in progress and I am going for *breadth, not depth*. I will
+continue to add both as I progress.
+- In practice this project uses Snowflake as the data warehouse.
+- Included examples:
+    - Multiple models and sources with differing materializations
+    - Multiple basic test examples
+    - A simple snapshot
+    - Some basic macros
+    - Some simple documentation
 
-Try running the following commands:
-- dbt run
-- dbt test
+### To Do
+- Analyses
+- Hooks
+- Exposures
+- Logging
+- Etc
 
-
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+## Built With
+- dbt-core==1.9.4
+- dbt-snowflake==1.9.3
+- dbt_utils=1.3.0

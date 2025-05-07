@@ -1,3 +1,5 @@
+<!-- A simple example markdown document -->
+
 {% docs dim_listings_clean__minimum_nights %}
 Minimum number of nights required to rent this property. 
 
