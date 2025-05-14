@@ -34,3 +34,6 @@ models:
     staging:
       +materialized: ephemeral
 
+vars:
+  log_prefix_info: "INFO:"
+  log_prefix_debug: "DEBUG:"
